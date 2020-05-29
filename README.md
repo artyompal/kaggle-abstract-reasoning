@@ -1,8 +1,8 @@
 # Kaggle Abstraction and Reasoning Challenge
-This is our solution of Kaggle Abstraction and Reasoning Challenge which scored 10th on the leaderboard (there were 915 competitors).
+This is our solution of [Kaggle Abstraction and Reasoning Challenge](https://www.kaggle.com/c/abstraction-and-reasoning-challenge) which scored 10th on the leaderboard (there were 915 competitors).
 
 ## The challenge
-The Abstraction and Reasoning Corpus is hosted here: https://github.com/fchollet/ARC. It offers 400 tasks in the train dataset, 
+The Abstraction and Reasoning Corpus (https://github.com/fchollet/ARC) offers 400 tasks in the train dataset, 
 400 tasks in the validation set, and 100 tasks in the test set (hidden). Every task is a little similar to some tasks from IQ test.
 An example of a task:<br>
 ![Task 1](pic/task1.png)
@@ -102,3 +102,6 @@ We use pybind11 to build Python extension module.
 You're welcome to read this forum thread, you can ask us some questions over there: https://www.kaggle.com/c/abstraction-and-reasoning-challenge/discussion/154294
 
 You can also play with this notebook which has Python version of our code: https://www.kaggle.com/alexfritz/genetic-dsl-part-from-10th-place-python-version
+
+## References
+If you're looking for details of this challenge, evaluation metric, etc, you might want to read paper "On the Measure of Intelligence" by François Chollet: https://arxiv.org/abs/1911.01547
