@@ -1,0 +1,33 @@
+{
+	"input": [
+		[8, 0],
+		[0, 4]
+	],
+	"params": [
+		[{
+			"type": "draw_line_to",
+			"macro_type": "global_rule",
+			"apply_to": "index",
+			"apply_to_index": 7,
+			"direction_color": 7,
+			"not_stop_by_color": 0,
+			"not_stop_by_color_and_skip": 0,
+			"start_by_color": 4,
+			"with_color": 0
+		}],
+		[{
+			"type": "nbh_check",
+			"macro_type": "ca_rule",
+			"ignore_colors": [0, 3, 4, 7, 8],
+			"nbh_check_sum": 3,
+			"nbh_check_colors": [7, 8],
+			"nbh_check_out": 0
+		}], {
+			"type": "macro_multiply",
+			"k1": 2,
+			"k2": 3
+		}, {
+			"type": "output_last"
+		}
+	]
+}

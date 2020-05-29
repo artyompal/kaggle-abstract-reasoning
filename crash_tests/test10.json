@@ -1,0 +1,39 @@
+{
+	"input": [
+		[2, 2, 2, 2, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 0, 2, 0, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 2, 2, 2, 2, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0]
+	],
+	"params": [
+		[{
+			"type": "gravity",
+			"macro_type": "global_rule",
+			"apply_to": "index",
+			"apply_to_index": 3,
+			"gravity_type": "figures",
+			"steps_limit": 0,
+			"look_at_what_to_move": 0,
+			"direction_type": "border",
+			"direction_border": "right"
+		}],
+		[], {
+			"type": "figures",
+			"sort": "smallest"
+		}, {
+			"type": "output_last"
+		}
+	],
+	"expected": [
+		[0, 2, 2, 2, 2, 2, 0],
+		[0, 2, 0, 0, 0, 2, 0],
+		[0, 2, 0, 0, 0, 2, 0],
+		[0, 2, 0, 0, 0, 2, 0],
+		[0, 2, 2, 2, 2, 2, 0],
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0]
+	]
+}

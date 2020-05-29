@@ -1,0 +1,46 @@
+{
+	"input": [
+		[2, 2, 2, 2, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 0, 2, 0, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 2, 2, 2, 2, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0]
+	],
+	"params": [
+		[{
+			"type": "unity",
+			"macro_type": "global_rule",
+			"apply_to": "index",
+			"apply_to_index": 3,
+			"mode": "horver",
+			"ignore_colors": [0, 3],
+			"with_color": 0
+		}],
+		[{
+			"type": "color_distribution",
+			"macro_type": "ca_rule",
+			"ignore_colors": [2, 4, 8],
+			"direction": "bottom",
+			"check_in_empty": 0,
+			"color_out": 8,
+			"color_in": 8
+		}], {
+			"type": "figures",
+			"sort": "biggest"
+		}, {
+			"type": "cellwise_or"
+		}
+	],
+	"expected": [
+		[2, 2, 2, 2, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 0, 2, 0, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 2, 2, 2, 2, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0]
+	]
+}
+

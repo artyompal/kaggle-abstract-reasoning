@@ -1,0 +1,28 @@
+{
+	"input": [
+		[8, 0],
+		[0, 4]
+	],
+	"params": [
+		[{
+			"type": "rotate",
+			"macro_type": "global_rule",
+			"apply_to": "last",
+			"rotations_count": 1
+		}],
+		[{
+			"type": "indirect_check",
+			"macro_type": "ca_rule",
+			"ignore_colors": [0, 3, 4, 7, 8],
+			"nbh_check_sum": 0,
+			"nbh_check_colors": [4],
+			"nbh_check_out": 0
+		}], {
+			"type": "color_figures",
+			"sort": "biggest"
+		}, {
+			"type": "output_last"
+		}
+	]
+}
+

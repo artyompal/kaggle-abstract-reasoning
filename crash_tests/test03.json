@@ -1,0 +1,32 @@
+{
+	"input": [
+		[8, 0],
+		[0, 4]
+	],
+	"params": [
+		[{
+			"type": "draw_lines",
+			"macro_type": "global_rule",
+			"apply_to": "index",
+			"apply_to_index": 9,
+			"direction": "horizontal",
+			"not_stop_by_color": 0,
+			"start_by_color": 4,
+			"with_color": 0
+		}],
+		[], {
+			"type": "figures",
+			"sort": "smallest"
+		}, {
+			"type": "cellwise_or"
+		}
+	],
+	"expected": [
+		[
+			[
+				[8, 0],
+				[0, 4]
+			]
+		]
+	]
+}

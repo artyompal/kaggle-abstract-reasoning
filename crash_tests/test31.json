@@ -1,0 +1,31 @@
+{
+	"input": [
+		[8, 0],
+		[0, 4]
+	],
+	"params": [
+		[{
+			"type": "distribute_colors",
+			"macro_type": "global_rule",
+			"apply_to": "last",
+			"colors": [0, 8],
+			"horizontally": 1,
+			"vertically": 0,
+			"intersect": 0
+		}],
+		[{
+			"type": "indirect_check",
+			"macro_type": "ca_rule",
+			"ignore_colors": [0, 3, 4, 7, 8],
+			"nbh_check_sum": 2,
+			"nbh_check_colors": [4, 8],
+			"nbh_check_out": 0
+		}], {
+			"type": "macro_multiply",
+			"k1": 3,
+			"k2": 3
+		}, {
+			"type": "cellwise_or"
+		}
+	]
+}

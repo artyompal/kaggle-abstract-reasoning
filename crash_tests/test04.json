@@ -1,0 +1,36 @@
+{
+	"input": [
+		[8, 0],
+		[0, 4]
+	],
+	"params": [
+		[{
+			"type": "rotate",
+			"macro_type": "global_rule",
+			"apply_to": "index",
+			"apply_to_index": 1,
+			"rotations_count": 3
+		}],
+		[{
+			"type": "indirect_check",
+			"macro_type": "ca_rule",
+			"ignore_colors": [0, 3, 4, 7, 8],
+			"nbh_check_sum": 2,
+			"nbh_check_colors": [3],
+			"nbh_check_out": 0
+		}], {
+			"type": "figures",
+			"sort": "smallest"
+		}, {
+			"type": "cellwise_or"
+		}
+	],
+	"expected": [
+		[
+			[
+				[0, 8],
+				[4, 0]
+			]
+		]
+	]
+}

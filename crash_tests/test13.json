@@ -1,0 +1,42 @@
+{
+	"input": [
+		[2, 2, 2, 2, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 0, 2, 0, 2, 0, 0],
+		[2, 0, 0, 0, 2, 0, 0],
+		[2, 2, 2, 2, 2, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0]
+	],
+	"params": [
+		[{
+			"type": "align_pattern",
+			"macro_type": "global_interaction_rule",
+			"apply_to": "all",
+			"allow_color": 0
+		}],
+		[{
+			"type": "color_distribution",
+			"macro_type": "ca_rule",
+			"ignore_colors": [2, 8],
+			"direction": "bottom_right",
+			"check_in_empty": 0,
+			"color_out": 8,
+			"color_in": 8
+		}], {
+			"type": "figures",
+			"sort": "biggest"
+		}, {
+			"type": "output_last"
+		}
+	],
+	"expected": [
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 2, 2, 2, 2, 2],
+		[0, 0, 2, 0, 0, 0, 2],
+		[0, 0, 2, 0, 0, 0, 2],
+		[0, 0, 2, 0, 0, 0, 2],
+		[0, 0, 2, 2, 2, 2, 2]
+	]
+}

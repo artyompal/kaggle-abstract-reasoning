@@ -1,0 +1,23 @@
+{
+	"input": [
+		[8, 0],
+		[0, 4]
+	],
+	"params": [
+		[],
+		[], {
+			"type": "figures",
+			"sort": "biggest"
+		}, {
+			"type": "output_first"
+		}
+	],
+	"expected": [
+		[
+			[
+				[8, 0],
+				[0, 4]
+			]
+		]
+	]
+}

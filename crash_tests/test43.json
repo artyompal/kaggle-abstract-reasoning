@@ -1,0 +1,5 @@
+
+{"input": [[6, 0, 4, 0],
+       [0, 0, 6, 6],
+       [6, 4, 0, 4]], "params": [[{"type": "rotate", "macro_type": "global_rule", "apply_to": "index", "apply_to_index": 3, "rotations_count": 1}], [{"type": "indirect_check", "macro_type": "ca_rule", "ignore_colors": [4], "nbh_check_sum": 0, "nbh_check_colors": [5, 9], "nbh_check_out": 4}], {"type": "macro_multiply", "k1": 2, "k2": 2}, {"type": "cellwise_or"}]}
+
