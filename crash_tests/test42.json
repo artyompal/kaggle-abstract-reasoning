@@ -1,12 +1,68 @@
-
-{"input": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-       [8, 8, 8, 0, 0, 0, 0, 0, 0, 0],
-       [8, 8, 8, 0, 0, 0, 0, 0, 0, 0],
-       [8, 8, 8, 0, 7, 7, 0, 2, 2, 2],
-       [8, 8, 8, 0, 7, 7, 0, 2, 2, 2]], "params": [[{"type": "flip", "macro_type": "global_rule", "apply_to": "all", "how": "ver"}, {"type": "map_color", "macro_type": "global_rule", "apply_to": "index", "apply_to_index": 1, "color_in": 2, "color_out": 8}, {"type": "gravity", "macro_type": "global_rule", "apply_to": "index", "apply_to_index": 5, "gravity_type": "figures", "steps_limit": 1, "look_at_what_to_move": 0, "direction_type": "color", "direction_color": 8}], [{"type": "color_distribution", "macro_type": "ca_rule", "ignore_colors": [0, 2], "direction": "left", "check_in_empty": 0, "color_out": 0, "color_in": 0}, {"type": "nbh_check", "macro_type": "ca_rule", "ignore_colors": [0, 7], "nbh_check_sum": 4, "nbh_check_colors": [0], "nbh_check_out": 0}, {"type": "nbh_check", "macro_type": "ca_rule", "ignore_colors": [0], "nbh_check_sum": 4, "nbh_check_colors": [3, 7], "nbh_check_out": 0}], {"type": "macro_multiply", "k1": 1, "k2": 1}, {"type": "output_first"}]}
-
+{
+    "input": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [8, 8, 8, 0, 0, 0, 0, 0, 0, 0],
+        [8, 8, 8, 0, 0, 0, 0, 0, 0, 0],
+        [8, 8, 8, 0, 7, 7, 0, 2, 2, 2],
+        [8, 8, 8, 0, 7, 7, 0, 2, 2, 2]
+    ],
+    "params": [
+        [{
+            "type": "flip",
+            "macro_type": "global_rule",
+            "apply_to": "all",
+            "how": "ver"
+        }, {
+            "type": "map_color",
+            "macro_type": "global_rule",
+            "apply_to": "index",
+            "apply_to_index": 1,
+            "color_in": 2,
+            "color_out": 8
+        }, {
+            "type": "gravity",
+            "macro_type": "global_rule",
+            "apply_to": "index",
+            "apply_to_index": 5,
+            "gravity_type": "figures",
+            "steps_limit": 1,
+            "look_at_what_to_move": 0,
+            "direction_type": "color",
+            "direction_color": 8
+        }],
+        [{
+            "type": "color_distribution",
+            "macro_type": "ca_rule",
+            "ignore_colors": [0, 2],
+            "direction": "left",
+            "check_in_empty": 0,
+            "color_out": 0,
+            "color_in": 0
+        }, {
+            "type": "nbh_check",
+            "macro_type": "ca_rule",
+            "ignore_colors": [0, 7],
+            "nbh_check_sum": 4,
+            "nbh_check_colors": [0],
+            "nbh_check_out": 0
+        }, {
+            "type": "nbh_check",
+            "macro_type": "ca_rule",
+            "ignore_colors": [0],
+            "nbh_check_sum": 4,
+            "nbh_check_colors": [3, 7],
+            "nbh_check_out": 0
+        }], {
+            "type": "macro_multiply",
+            "k1": 1,
+            "k2": 1
+        }, {
+            "type": "output_first"
+        }
+    ]
+}

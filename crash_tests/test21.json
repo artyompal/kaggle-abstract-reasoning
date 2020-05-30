@@ -1,11 +1,33 @@
 {
-"input": [[0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0]],
-"params": 
-[[{"type": "rotate", "macro_type": "global_rule", "apply_to": "index", "apply_to_index": 4, "rotations_count": 2}], [{"type": "indirect_check", "macro_type": "ca_rule", "ignore_colors": [1], "nbh_check_sum": 0, "nbh_check_colors": [1], "nbh_check_out": 1}], {"type": "figures", "sort": "biggest"}, {"type": "output_last"}]
+    "input": [
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0]
+    ],
+    "params": [
+        [{
+            "type": "rotate",
+            "macro_type": "global_rule",
+            "apply_to": "index",
+            "apply_to_index": 4,
+            "rotations_count": 2
+        }],
+        [{
+            "type": "indirect_check",
+            "macro_type": "ca_rule",
+            "ignore_colors": [1],
+            "nbh_check_sum": 0,
+            "nbh_check_colors": [1],
+            "nbh_check_out": 1
+        }], {
+            "type": "figures",
+            "sort": "biggest"
+        }, {
+            "type": "output_last"
+        }
+    ]
 }
