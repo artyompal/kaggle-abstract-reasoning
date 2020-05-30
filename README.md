@@ -63,14 +63,14 @@ Global rules are more interesting. They are:
 * crop figure or crop non-background pixels;
 * make holes;
 * move pieces;
-* and most importantly, replace colors (this allows everything else work together).
+* and replace colors (this allows everything else work together).
 
 ### Genetic Algorithm
 
-The number of possible combinations is combinatorial (read: huge). 
-To iterate over its space efficiently, we use genetic algorithm.
-In a few words, this means that we start with a population of random program, than we pick most promising ones and 
-mutate and/or crossover them. This is called asexual and sexual reproduction, correspondingly.
+The number of possible combinations is combinatorial (i.e. huge). 
+To iterate over this space efficiently, we use a genetic algorithm.
+In a few words, this means that we start with a population of random programs, then we pick most promising ones and 
+apply mutations and/or crossover. These are called asexual and sexual reproduction, correspondingly.
 
 ### Add more tricks
 
@@ -91,6 +91,16 @@ cd python-dsl-code
 python genetics.py
 ```
 
+## Preparing submission for Kaggle
+```
+cd python-dsl-code
+python bake_kernel.py
+```
+
+This will generate a file called `kernel.py`. 
+Create a script kernel on Kaggle, upload this file and hit Save.
+After kernel runs, it will generate submission.csv.
+
 ## Technical details
 Initially, everything was implemented in Python. After we teamed up, we identified Python code as a bottleneck 
 and ported all rules to C++. This improved performance by a factor 50 to 100, so it allowed us to solve more complex tasks 
@@ -99,7 +109,7 @@ withing same time constraints.
 We use pybind11 to build Python extension module.
 
 ## More information
-You're welcome to read this forum thread, you can ask us some questions over there: https://www.kaggle.com/c/abstraction-and-reasoning-challenge/discussion/154294
+This forum thread has more information on our solution; also, you can ask us any questions over there: https://www.kaggle.com/c/abstraction-and-reasoning-challenge/discussion/154294
 
 You can also play with this notebook which has Python version of our code: https://www.kaggle.com/alexfritz/genetic-dsl-part-from-10th-place-python-version
 
